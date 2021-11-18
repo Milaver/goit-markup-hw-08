@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css "/>
+    <!-- <link rel="stylesheet" href="./css/styles.css " /> -->
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="logo header__logo" href="./index.html" lang="en">
+            Web<span class="header__logo--accent-color">Studio</span>
+          </a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link text-link link"
+                >Студия
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link text-link navigation__link--current link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link text-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link text-link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-leter"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link text-link link">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <ul class="filter list">
+            <li class="filter__item">
+              <button type="button" class="button button--primary">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
+                Приложения
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- Примеры работ -->
+          <ul class="work-set">
+            <li class="work-set__item">
+              <a class="work-set__link" href="">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/web-site.jpg"
+                    alt="Веб-сайт Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">Технокряк</h2>
+                  <p class="work-portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a class="work-set__link" href="">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/poster.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      Осень вновь напомнила душе о самом главном, Осень, я опять
+                      лишен покоя.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="work-portfolio__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/restaurant.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      — Ты когда-нибудь слушал тишину, Ежик? — Слушал. — И что?
+                      — А ничего. Тихо. — А я люблю, когда в тишине что-нибудь
+                      шевелится. — Приведи пример, — попросил Ежик. — Ну,
+                      например, гром, — сказал Медвежонок.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">Ресторан Seafood</h2>
+                  <p class="work-portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/project-prime.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      — А вот и ты! — сказал Медвежонок, однажды проснувшись и
+                      увидев на своем крыльце Ежика. — Я. — Где же ты был? —
+                      Меня очень долго не было, — сказал Ежик. — Когда
+                      пропадаешь, надо заранее предупреждать своих друзей.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="work-portfolio__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/project-boxes.jpg"
+                    alt="Проект Boxes"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      — А когда тебя не было, ты где-нибудь был? — Угу. — Где? —
+                      Там, — сказал Ежик и махнул лапой. — Далеко? Ежик съежился
+                      и закрыл глаза.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="work-portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/inspiration-has-no-border.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      — Я очень люблю осенние пасмурные дни, — сказал Ёжик. —
+                      Солнышко тускло светит, и так туманно-туманно… — Спокойно,
+                      — сказал Медвежонок. — Ага. Будто все остановилось и
+                      стоит.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="work-portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      – А когда я вам больше нравлюсь – утром или вечером? – Мне
+                      – утром, – сказал Медвежонок. – А почему? – Тогда впереди
+                      целый день...
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="work-portfolio__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a class="work-set__link" href="">
+                <div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/lab.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      — Я собрался идти к тебе, — сказал Медвежонок. — А тут
+                      прибежал Заяц и говорит, что я лучше всех. — Верно, —
+                      сказал Ёжик. — А ты разве не знал?
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="work-portfolio__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-set__item">
+              <a href="" class="work-set__link"
+                ><div class="work-portfolio work-list-thumb">
+                  <img
+                    class="work-portfolio__image"
+                    src="./images/portfolio/gruving-business.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-portfolio__overlay">
+                    <p class="work-portfolio__overlay_text">
+                      Красиво было так, что он время от времени вздрагивал: не
+                      снится ли ему все это?
+                    </p>
+                  </div>
+                </div>
+                <div class="work-portfolio__meta">
+                  <h2 class="work-portfolio__title">Growing Business</h2>
+                  <p class="work-portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+     <!--Футер-->
+     <footer class="footer">
+      <div class="container footer-container">
+        <div class="footter__address">
+          <a class="logo footer__logo" href="./index.html" lang="en">
+            Web<span class="footer__logo--accent-logo">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="address__menu list">
+              <li class="address__item">
+                <a
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  class="address__link address__link_map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__social-container">
+          <p class="footer__title">присоединяйтесь</p>
+          <ul class="social-menu list">
+            <li class="social-menu__item">
+              <a href="" class="social-menu__link social-menu__link_footer">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu__item">
+              <a href="" class="social-menu__link social-menu__link_footer">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu__item">
+              <a href="" class="social-menu__link social-menu__link_footer">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu__item">
+              <a href="" class="social-menu__link social-menu__link_footer">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="footer__title">Подпишитесь на рассылку</p>
+          <div class="subscribe__block">
+            <form class="subscribe__label" name="e-mail">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <span class="subscribe__field">
+                <button type="submit" class="button button_subscribe">
+                  Подписаться
+                </button>
+                <span class="subscribe__icon"></span>
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
