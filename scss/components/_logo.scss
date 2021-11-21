@@ -1,8 +1,26 @@
 .logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-    color: var(--accent-color);
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: calc(28 / 24);
+  text-decoration: none;
+  color: var(--accent-color);
+
+  @include for-size(tablet-without) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
+
+  @include for-size(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 2.6rem;
+    line-height: calc(31 / 26);
+  }
+}

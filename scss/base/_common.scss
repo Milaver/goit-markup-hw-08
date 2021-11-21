@@ -1,9 +1,13 @@
+html {
+  font-size: var(--base-font-size);
+}
+
 body {
-  margin: 0 auto;
-  padding-top: 80px;
+//   margin: 0 auto;
+//   padding-top: 80px;
 
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--logo-bg-white-color);
