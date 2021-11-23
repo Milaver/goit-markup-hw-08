@@ -9,8 +9,9 @@
 @import './components/container';
 // @import './components/section';
 @import './components/logo';
+@import './components/menu-mobile';
 // @import './components/button';
-// @import './components/text-link';
+@import './components/text-link';
 // @import './components/section-title';
 // @import './components/social-links';
 // @import './components/navigation-link-current';
@@ -20,7 +21,7 @@
 // @import './components/footer-title';
 
 //LAYOUT
-// @import './layout/header';
+@import './layout/header';
 // @import './layout/hero';
 // @import './layout/features';
 // @import './layout/image-set';

@@ -67,7 +67,6 @@ img {
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -112,6 +111,7 @@ img {
   .logo {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 
@@ -119,6 +119,7 @@ img {
   .logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
     font-size: 2.6rem;
     line-height: calc(31 / 26);
   }
@@ -130,5 +131,96 @@ img {
 
 .logo--accent-color {
   color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .menu-mobile {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--logo-bg-white-color);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+    transform: translateY(-150%);
+    transition: transform 250ms var(--timing-function);
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-mobile {
+    width: 100%;
+  }
+}
+
+.text-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: currentColor;
+  transition: color 250ms var(--timing-function);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 500px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 4rem;
+    line-height: calc(47 / 40);
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid;
+    border-color: var(--border-header);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.menu {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */
