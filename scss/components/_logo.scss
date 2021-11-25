@@ -31,3 +31,14 @@
 .logo--accent-color {
   color: var(--accent-color);
 }
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: var(--logo-bg-white-color);
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
+}

@@ -29,3 +29,31 @@
       }
     }
   }
+
+  @mixin flexible($type: flex) {
+    display: $type;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  // Есть в секции features, works...
+  @mixin title-font() {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  @mixin section-title-font() {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
