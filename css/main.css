@@ -93,7 +93,7 @@ img {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
@@ -149,23 +149,146 @@ img {
 
 .mobile-menu {
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
-  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms var(--timing-function);
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+.mobile-menu__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+}
+
+.close-btn-icon {
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+}
+
+.close-btn-icon:hover .close-btn-icon,
+.close-btn-icon:focus .close-btn-icon {
+  fill: var(--accent-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  display: block;
+  font-size: 4rem;
+  line-height: calc(47 / 40);
+  color: var(--title-text-color);
+}
+
+.mobile-menu__contacts {
+  margin-top: auto;
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+  font-size: 2.4rem;
+  line-height: calc(40 / 34);
+  color: var(--primary-text-color);
+}
+
+.mobile-contacts__link--markout {
+  font-size: 3.4rem;
+  line-height: calc(28 / 24);
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .mobile-contacts__link--markout {
+    font-size: 26px;
+  }
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.mobile-social__link {
+  font-size: 1.8rem;
+  line-height: calc(22 / 18);
+  color: var(--accent-color);
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-menu .burger-menu__icon {
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+}
+
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.burger-menu:hover .burger-menu__icon,
+.burger-menu:focus .burger-menu__icon {
+  fill: var(--accent-color);
 }
 
 .button {
@@ -184,54 +307,6 @@ img {
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-}
-
-.burger-btn {
-  padding: 0;
-  line-height: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  fill: var(--title-text-color);
-  transition-property: fill;
-  transition-duration: 250ms var(--timing-function);
-}
-
-@media (min-width: 768px) {
-  .burger-btn {
-    display: none;
-  }
-}
-
-.burger-btn:hover,
-.burger-btn :focus {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
-
-.burger-icon-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  line-height: 0;
-  border: none;
-}
-
-.close-btn-icon {
-  width: 40px;
-  height: 40px;
 }
 
 .hero--button,
@@ -286,7 +361,7 @@ img {
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: currentColor;
   transition: color 250ms var(--timing-function);
@@ -310,6 +385,7 @@ img {
     left: 0;
     z-index: 1;
     background-color: var(--logo-bg-white-color);
+    border-bottom: 1px solid #ececec;
   }
 }
 
