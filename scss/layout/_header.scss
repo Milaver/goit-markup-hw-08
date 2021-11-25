@@ -1,50 +1,33 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+  // min-height: 60px;
 
   // подвижный header
   @include for-size(tablet) {
-    position: fixed;
-    width: 100%;
-    min-height: 80px;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    // // position: fixed;
+    // width: 100%;
+    // min-height: 80px;
+    // top: 0;
+    // left: 0;
+    // z-index: 1;
     background-color: var(--logo-bg-white-color);
     border-bottom: 1px solid #ececec;
   }
 }
 .header-container {
-  display: flex;
+  // display: flex;
 
   @include space-between();
   @media screen and (min-width: 1200px) {
     @include flexible();
   }
 }
-// .menu {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-//   @include for-size(tablet-without) {
-//     font-size: 4rem;
-//     line-height: calc(47 / 40);
-//   }
-//   @include for-size(tablet) {
-//     padding-top: 26px;
-//     padding-bottom: 26px;
-//     border-bottom: 1px solid;
-//     border-color: var(--border-header);
-//   }
-//   @include for-size(desktop) {
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-//   }
-// }
+
 
 /*Навигация */
 .navigation {

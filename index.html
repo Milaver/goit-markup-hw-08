@@ -69,9 +69,9 @@
           </li>
         </ul>
         <!-- Мобильное меню -->
-        <button class="burger-menu" data-menu-open>
+        <button class="menu-toggle burger-menu" data-menu-open>
           <svg
-            class="burger-icon-icon"
+            class="menu-toggle__icon"
             aria-label="Переключатель мобильного меню"
             height="40px"
             width="40px"
@@ -81,17 +81,17 @@
         </button>
       </div>
 
-      <div class="mobile-menu is-hidden" data-menu>
+      <div class="mobile-menu" data-menu>
         <div class="mobile-menu__container">
-          <button class="close-btn" data-menu-close>
-            <svg class="close-btn-icon">
+          <button class="menu-toggle close-btn" data-menu-close>
+            <svg class="menu-toggle__icon">
               <use href="./images/icons.svg#close-menu-mobile"></use>
             </svg>
           </button>
           <div class="mobile-menu__navigation">
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__item">
-                <a href="index.html" class="mobile-menu__link link">Студия</a>
+                <a href="index.html" class="mobile-menu__link mobile-menu__link--active link">Студия</a>
               </li>
               <li class="mobile-menu__item">
                 <a href="portfolio.html" class="mobile-menu__link link"
@@ -144,14 +144,14 @@
 
     <main>
       <!-- Герой -->
-      <!-- <section class="hero hero--overlay">
+      <section class="hero hero--overlay">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open type="button" class="button hero--button">
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--Наши преимущества-->
       <!-- <section class="section features">

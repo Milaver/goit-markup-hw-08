@@ -18,29 +18,7 @@
     fill: var(--accent-color);
   }
 }
-//   .burger-btn {
-//     padding: 0;
-//     line-height: 0;
-//     width: 40px;
-//     height: 40px;
-//     border: none;
-//     background-color: transparent;
-//     cursor: pointer;
-//     fill: var(--title-text-color);
-
-//     transition-property: fill;
-
-//     transition-duration: 250ms var(--timing-function);
-//     @include for-size(tablet) {
-//       display: none;
-//     }
-//     &:hover,
-//     :focus {
-//       fill: var(--accent-color);
-//       cursor: pointer;
-//     }
-//   }
-//   .burger-icon-icon {
-//     width: 40px;
-//     height: 40px;
-//   }
+  .burger-icon-icon {
+    width: 40px;
+    height: 40px;
+  }
