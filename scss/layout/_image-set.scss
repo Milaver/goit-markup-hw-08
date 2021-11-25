@@ -1,4 +1,14 @@
 /*Чем мы занимаемся*/
+.work {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  
+    // padding-top: 0px;
+    // padding-bottom: 94px;
+  }
+}
 .image-set {
   display: flex;
   text-align: center;
@@ -27,7 +37,7 @@
 .image-set__background {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--logo-bg-white-color);
 }

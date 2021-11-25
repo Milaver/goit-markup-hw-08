@@ -394,6 +394,14 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .header {
     background-color: var(--logo-bg-white-color);
@@ -727,5 +735,51 @@ img {
 .features__submit {
   line-height: calc(24 / 14);
   color: var(--primary-text-color);
+}
+
+/*Чем мы занимаемся*/
+.work {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
+.image-set {
+  display: flex;
+  text-align: center;
+  margin: 0px -30px 0px 0px;
+  padding: 0px;
+}
+
+.image-set__item {
+  position: relative;
+  z-index: -1;
+}
+
+.image-set__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.image-set__title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.image-set__background {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--logo-bg-white-color);
 }
 /*# sourceMappingURL=main.css.map */
