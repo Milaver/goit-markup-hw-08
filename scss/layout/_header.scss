@@ -11,7 +11,7 @@
   // letter-spacing: 0.02em;
 
   // подвижный header
-  @include for-size(tablet){
+  @include for-size(tablet) {
     position: fixed;
     width: 100%;
     min-height: 80px;
@@ -54,7 +54,8 @@
   display: none;
   @media screen and (min-width: 768px) {
     @include flexible(flex);
-  }}
+  }
+}
 
 .navigation__list {
   display: flex;
@@ -126,12 +127,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   text-decoration: none;
-  // &:hover,
-  // &:focus {
-  //   fill: var(--accent-color);}
-  &:hover .contacts__icon,
-  &:focus .contacts__icon {
-    fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 
@@ -162,5 +160,9 @@
       height: 16px;
       margin-right: 10px;
     }
+  }
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    fill: var(--accent-color);
   }
 }

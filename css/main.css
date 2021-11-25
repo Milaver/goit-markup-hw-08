@@ -422,9 +422,8 @@ img {
   text-decoration: none;
 }
 
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
-  fill: var(--accent-color);
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
 }
 
 .contacts__icon {
@@ -460,5 +459,10 @@ img {
     height: 16px;
     margin-right: 10px;
   }
+}
+
+.contacts__icon:hover .contacts__icon,
+.contacts__icon:focus .contacts__icon {
+  fill: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */

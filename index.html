@@ -632,3 +632,24 @@
   </body>
 </html>
 
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  vertical-align: middle;
+  transition: fill 250ms var(--timing-function);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+}
