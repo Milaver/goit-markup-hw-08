@@ -405,13 +405,8 @@ img {
 /* Блок соцсетей */
 .social-menu {
   display: flex;
-  justify-content: space-between;
-}
-
-.team-social-menu {
   justify-content: center;
-  margin: 0px;
-  padding: 0px;
+  align-items: center;
 }
 
 .social-menu__item {
@@ -428,8 +423,8 @@ img {
   height: 100%;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
@@ -439,12 +434,15 @@ img {
 }
 
 .social-menu__icon {
+  width: 20px;
+  height: 20px;
   fill: var(--border-client);
 }
 
 .social-menu__link:hover .social-menu__icon,
 .social-menu__link:focus .social-menu__icon {
   fill: var(--logo-bg-white-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 @media (min-width: 768px) {
