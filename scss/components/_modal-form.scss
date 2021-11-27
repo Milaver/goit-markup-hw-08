@@ -88,8 +88,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(12 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
@@ -105,10 +105,14 @@
   }
   .checkbox__input:checked + &::before {
     border: none;
-    background-image: url(../images/icon-check.svg);
+    background-image: url(./images/svg/icon-check.svg);
   }
   .checkbox__input:focus + &::before {
     outline: 1px solid var(--accent-color);
+  }
+  @include for-size(desctop) {
+    font-size: 12px;
+    line-height: calc(124 / 14);
   }
 }
 
