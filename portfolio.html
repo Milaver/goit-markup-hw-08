@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css " />
-    <!-- <link rel="stylesheet" href="./css/styles.css " /> -->
   </head>
+  
   <body>
     <!-- Шапка сайта -->
     <header class="header">
@@ -32,14 +32,14 @@
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a
-                href="./index.html"
-                class="navigation__link current text-link link"
+              <a href="./index.html" class="navigation__link text-link link"
                 >Студия
               </a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link text-link link"
+              <a
+                href="./portfolio.html"
+                class="navigation__link current text-link link"
                 >Портфолио</a
               >
             </li>
@@ -91,14 +91,12 @@
           <div class="mobile-menu__navigation">
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__item">
-                <a
-                  href="index.html"
-                  class="mobile-menu__link mobile-menu__link--active link"
-                  >Студия</a
-                >
+                <a href="index.html" class="mobile-menu__link link">Студия</a>
               </li>
               <li class="mobile-menu__item">
-                <a href="portfolio.html" class="mobile-menu__link link"
+                <a
+                  href="portfolio.html"
+                  class="mobile-menu__link mobile-menu__link--active link"
                   >Портфолио</a
                 >
               </li>
@@ -148,7 +146,7 @@
     <main>
       <section class="section portfolio">
         <div class="container">
-          <ul class="filter list">
+          <ul class="filter portfolio-filter list">
             <li class="filter__item">
               <button type="button" class="button button--primary">Все</button>
             </li>
@@ -179,13 +177,56 @@
             <li class="work-set__item">
               <a class="work-set__link" href="">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/web-site.jpg"
-                    alt="Веб-сайт Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/techno.webp,
+                        ./images/catalog/mobile/techno@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/techno.webp,
+                        ./images/catalog/tablet/techno@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/techno.webp,
+                        ./images/catalog/desktop/techno@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/techno.jpg,
+                        ./images/catalog/mobile/techno@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/techno.jpg,
+                        ./images/catalog/tablet/techno@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/catalog/desktop/techno@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/techno.jpg"
+                      alt="Веб-сайт Технокряк"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       Технокряк это современная площадка распространения
@@ -204,13 +245,58 @@
             <li class="work-set__item">
               <a class="work-set__link" href="">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/poster.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/poster-orlean-star.webp,
+                        ./images/catalog/mobile/poster-orlean-star@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/poster-orlean-star.webp,
+                        ./images/catalog/tablet/poster-orlean-star@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/poster-orlean-star.webp,
+                        ./images/catalog/desktop/poster-orlean-star@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/poster-orlean-star.jpg,
+                        ./images/catalog/mobile/poster-orlean-star@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/poster-orlean-star.jpg,
+                        ./images/catalog/tablet/poster-orlean-star@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/poster-orlean-star@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/poster-orlean-star.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       Осень вновь напомнила душе о самом главном, Осень, я опять
@@ -229,13 +315,58 @@
             <li class="work-set__item">
               <a href="" class="work-set__link">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/restaurant.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/restaurant-seafood.webp,
+                        ./images/catalog/mobile/restaurant-seafood@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/restaurant-seafood.webp,
+                        ./images/catalog/tablet/restaurant-seafood@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/restaurant-seafood.webp,
+                        ./images/catalog/desktop/restaurant-seafood@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/restaurant-seafood.jpg,
+                        ./images/catalog/mobile/restaurant-seafood@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/restaurant-seafood.jpg,
+                        ./images/catalog/tablet/restaurant-seafood@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/restaurant-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/restaurant-seafood.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       — Ты когда-нибудь слушал тишину, Ежик? — Слушал. — И что?
@@ -254,13 +385,56 @@
             <li class="work-set__item">
               <a href="" class="work-set__link">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/project-prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/prime.webp,
+                        ./images/catalog/mobile/prime@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/prime.webp,
+                        ./images/catalog/tablet/prime@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/prime.webp,
+                        ./images/catalog/desktop/prime@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/prime.jpg,
+                        ./images/catalog/mobile/prime@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/prime.jpg,
+                        ./images/catalog/tablet/prime@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/catalog/mobile/prime@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/mobile/prime.jpg"
+                      alt="Проект Prime"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       — А вот и ты! — сказал Медвежонок, однажды проснувшись и
@@ -281,11 +455,55 @@
             <li class="work-set__item">
               <a href="" class="work-set__link">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/project-boxes.jpg"
-                    alt="Проект Boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/boxes.webp,
+                        ./images/catalog/mobile/boxes@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/boxes.webp,
+                        ./images/catalog/tablet/boxes@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/boxes.webp,
+                        ./images/catalog/desktop/boxes@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/boxes.jpg,
+                        ./images/catalog/mobile/boxes@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/boxes.jpg,
+                        ./images/catalog/tablet/boxes@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/catalog/desktop/boxes@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/boxes.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       — А когда тебя не было, ты где-нибудь был? — Угу. — Где? —
@@ -305,13 +523,56 @@
             <li class="work-set__item">
               <a href="" class="work-set__link">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/inspiration-has-no-border.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/inspiration.webp,
+                        ./images/catalog/mobile/inspiration@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/inspiration.webp,
+                        ./images/catalog/tablet/inspiration@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/inspiration.webp,
+                        ./images/catalog/desktop/inspiration@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/inspiration.jpg,
+                        ./images/catalog/mobile/inspiration@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/inspiration.jpg,
+                        ./images/catalog/tablet/inspiration@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/catalog/desktop/inspiration@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/inspiration.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       — Я очень люблю осенние пасмурные дни, — сказал Ёжик. —
@@ -332,13 +593,58 @@
             <li class="work-set__item">
               <a href="" class="work-set__link">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/limited-edition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/limited-edition.webp,
+                        ./images/catalog/mobile/limited-edition@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/limited-edition.webp,
+                        ./images/catalog/tablet/limited-edition@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/limited-edition.webp,
+                        ./images/catalog/desktop/limited-edition@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/limited-edition.jpg,
+                        ./images/catalog/mobile/limited-edition@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/limited-edition.jpg,
+                        ./images/catalog/tablet/limited-edition@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/limited-edition@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/limited-edition.jpg"
+                      alt="Издание Limited Edition"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       – А когда я вам больше нравлюсь – утром или вечером? – Мне
@@ -358,13 +664,56 @@
             <li class="work-set__item">
               <a class="work-set__link" href="">
                 <div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/lab.webp,
+                        ./images/catalog/mobile/lab@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/lab.webp,
+                        ./images/catalog/tablet/lab@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/lab.webp,
+                        ./images/catalog/desktop/lab@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/lab.jpg,
+                        ./images/catalog/mobile/lab@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/lab.jpg,
+                        ./images/catalog/tablet/lab@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/catalog/desktop/lab@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/lab.jpg"
+                      alt="Проект LAB"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       — Я собрался идти к тебе, — сказал Медвежонок. — А тут
@@ -384,13 +733,58 @@
             <li class="work-set__item">
               <a href="" class="work-set__link"
                 ><div class="work-portfolio work-list-thumb">
-                  <img
-                    class="work-portfolio__image"
-                    src="./images/portfolio/gruving-business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/growing-business.webp,
+                        ./images/catalog/mobile/growing-business@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/growing-business.webp,
+                        ./images/catalog/tablet/growing-business@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/growing-business.webp,
+                        ./images/catalog/desktop/growing-business@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/mobile/growing-business.jpg,
+                        ./images/catalog/mobile/growing-business@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/tablet/growing-business.jpg,
+                        ./images/catalog/tablet/growing-business@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/catalog/desktop/growing-business@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="work-portfolio__image"
+                      src="./images/catalog/desktop/growing-business.jpg"
+                      alt="Growing Business"
+                      width="370"
+                    />
+                  </picture>
                   <div class="work-portfolio__overlay">
                     <p class="work-portfolio__overlay_text">
                       Красиво было так, что он время от времени вздрагивал: не
@@ -511,5 +905,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>
